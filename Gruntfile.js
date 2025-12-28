@@ -5,8 +5,8 @@ module.exports = function(grunt){
     sass: {
       dist: {
         options: {
-          style: 'expanded',
-          precision: 15
+          implementation: require('sass'),
+          sourceMap: true
         },
         files: [{
           expand: true,
@@ -142,7 +142,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-postcss');

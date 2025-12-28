@@ -36,7 +36,7 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
 /* Grid
    ========================================================================== */
 .grid, .grid-double {
-  background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px);
+  background-image: linear-gradient(to bottom, hsla(200, 100%, 50%, 0.3) 1px, transparent 1px);
   background-position: left top;
   background-repeat: repeat;
   background-size: 100% 26px;
@@ -45,16 +45,16 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
 @media screen and (min-width: 40em) {
   .grid, .grid-double {
     background-size: 100% 31px;
-    background-size: 100% 1.722222222222222rem;
+    background-size: 100% 1.7222222222rem;
   }
 }
 
 .grid-double {
-  background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 13px, rgba(0, 170, 255, 0.2) 13px, transparent 14px, transparent 26px);
+  background-image: linear-gradient(to bottom, hsla(200, 100%, 50%, 0.3) 1px, transparent 1px, transparent 13px, hsla(200, 100%, 50%, 0.2) 13px, transparent 14px, transparent 26px);
 }
 @media screen and (min-width: 40em) {
   .grid-double {
-    background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 15.5px, rgba(0, 170, 255, 0.2) 15.5px, transparent 16.5px, transparent 31px);
+    background-image: linear-gradient(to bottom, hsla(200, 100%, 50%, 0.3) 1px, transparent 1px, transparent 15.5px, hsla(200, 100%, 50%, 0.2) 15.5px, transparent 16.5px, transparent 31px);
   }
 }
 
@@ -150,9 +150,9 @@ html {
 @media screen and (min-width: 40em) {
   * {
     line-height: 31px;
-    line-height: 1.722222222222222rem;
+    line-height: 1.7222222222rem;
     margin-bottom: 31px;
-    margin-bottom: 1.722222222222222rem;
+    margin-bottom: 1.7222222222rem;
     max-width: 630px;
     max-width: 35rem;
     margin-left: auto;
@@ -195,7 +195,7 @@ section {
 a {
   background: transparent;
   color: #222;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 a:active, a:hover {
   outline: 0;
@@ -258,7 +258,7 @@ code {
 @media screen and (min-width: 40em) {
   code {
     padding: 31px;
-    padding: 1.722222222222222rem;
+    padding: 1.7222222222rem;
   }
 }
 
@@ -275,7 +275,7 @@ figcaption {
   line-height: 1.625rem;
   color: #222;
   display: block;
-  font-size: .8125rem;
+  font-size: 0.8125rem;
   font-style: italic;
   margin-bottom: 0;
   text-align: center;
@@ -283,7 +283,7 @@ figcaption {
 @media screen and (min-width: 40em) {
   figcaption {
     line-height: 31px;
-    line-height: 1.722222222222222rem;
+    line-height: 1.7222222222rem;
     margin-bottom: 0;
   }
 }
@@ -298,7 +298,7 @@ figure {
     max-width: 315px;
     max-width: 17.5rem;
     padding: 0px 31px;
-    padding: 0rem 1.722222222222222rem;
+    padding: 0rem 1.7222222222rem;
   }
 }
 @media screen and (min-width: 40em) {
@@ -315,7 +315,7 @@ figure {
     font-size: 19.2px;
     font-size: 1.2rem;
     line-height: 31px;
-    line-height: 1.722222222222222rem;
+    line-height: 1.7222222222rem;
   }
 }
 
@@ -392,66 +392,61 @@ h6 {
     font-size: 40px;
     font-size: 2.5rem;
     line-height: 62px;
-    line-height: 3.444444444444445rem;
+    line-height: 3.4444444444rem;
     margin-top: 124px;
-    margin-top: 6.888888888888889rem;
+    margin-top: 6.8888888889rem;
     margin-bottom: 31px;
-    margin-bottom: 1.722222222222222rem;
+    margin-bottom: 1.7222222222rem;
   }
-
   h2 {
     font-size: 27px;
     font-size: 1.6875rem;
     line-height: 46.5px;
-    line-height: 2.583333333333334rem;
+    line-height: 2.5833333333rem;
     margin-top: 77.5px;
-    margin-top: 4.305555555555556rem;
+    margin-top: 4.3055555556rem;
     margin-bottom: 15.5px;
-    margin-bottom: 0.861111111111111rem;
+    margin-bottom: 0.8611111111rem;
   }
-
   h3 {
     font-size: 22px;
     font-size: 1.375rem;
     line-height: 31px;
-    line-height: 1.722222222222222rem;
+    line-height: 1.7222222222rem;
     margin-top: 62px;
-    margin-top: 3.444444444444445rem;
+    margin-top: 3.4444444444rem;
     margin-bottom: 15.5px;
-    margin-bottom: 0.861111111111111rem;
+    margin-bottom: 0.8611111111rem;
   }
-
   h4 {
     font-size: 19.2px;
     font-size: 1.2rem;
     line-height: 31px;
-    line-height: 1.722222222222222rem;
+    line-height: 1.7222222222rem;
     margin-top: 46.5px;
-    margin-top: 2.583333333333334rem;
+    margin-top: 2.5833333333rem;
     margin-bottom: 15.5px;
-    margin-bottom: 0.861111111111111rem;
+    margin-bottom: 0.8611111111rem;
   }
-
   h5 {
     font-size: 16px;
     font-size: 1rem;
     line-height: 31px;
-    line-height: 1.722222222222222rem;
+    line-height: 1.7222222222rem;
     margin-top: 77.5px;
-    margin-top: 4.305555555555556rem;
+    margin-top: 4.3055555556rem;
     margin-bottom: 15.5px;
-    margin-bottom: 0.861111111111111rem;
+    margin-bottom: 0.8611111111rem;
   }
-
   h6 {
     font-size: 16px;
     font-size: 1rem;
     line-height: 31px;
-    line-height: 1.722222222222222rem;
+    line-height: 1.7222222222rem;
     margin-top: 77.5px;
-    margin-top: 4.305555555555556rem;
+    margin-top: 4.3055555556rem;
     margin-bottom: 15.5px;
-    margin-bottom: 0.861111111111111rem;
+    margin-bottom: 0.8611111111rem;
   }
 }
 h1 + h2 {
@@ -461,7 +456,7 @@ h1 + h2 {
 @media screen and (min-width: 40em) {
   h1 + h2 {
     margin-top: 31px;
-    margin-top: 1.722222222222222rem;
+    margin-top: 1.7222222222rem;
   }
 }
 
@@ -476,7 +471,7 @@ h4 + h5 {
   h3 + h4,
   h4 + h5 {
     margin-top: 15.5px;
-    margin-top: 0.861111111111111rem;
+    margin-top: 0.8611111111rem;
   }
 }
 
@@ -487,7 +482,7 @@ h5 + h6 {
 @media screen and (min-width: 40em) {
   h5 + h6 {
     margin-top: -15.5px;
-    margin-top: -0.861111111111111rem;
+    margin-top: -0.8611111111rem;
   }
 }
 
@@ -513,6 +508,18 @@ hr {
   height: 1.625rem;
   margin-right: auto;
   margin-left: auto;
+}
+@media screen and (min-width: 40em) {
+  hr {
+    margin-top: 62px;
+    margin-top: 3.4444444444rem;
+    margin-bottom: 62px;
+    margin-bottom: 3.4444444444rem;
+    height: 31px;
+    height: 1.7222222222rem;
+  }
+}
+hr {
   background-size: 100% 26px;
   background-size: 100% 1.625rem;
   background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, #222 11px, #222 15px, transparent 15px, transparent 26px);
@@ -520,18 +527,8 @@ hr {
 }
 @media screen and (min-width: 40em) {
   hr {
-    margin-top: 62px;
-    margin-top: 3.444444444444445rem;
-    margin-bottom: 62px;
-    margin-bottom: 3.444444444444445rem;
-    height: 31px;
-    height: 1.722222222222222rem;
-  }
-}
-@media screen and (min-width: 40em) {
-  hr {
     background-size: 100% 31px;
-    background-size: 100% 1.722222222222222rem;
+    background-size: 100% 1.7222222222rem;
     background-image: linear-gradient(to bottom, transparent 1px, transparent 13.5px, #222 13.5px, #222 17.5px, transparent 17.5px, transparent 31px);
   }
 }
@@ -583,7 +580,7 @@ figure blockquote {
 @media screen and (min-width: 40em) {
   figure blockquote {
     padding: 62px 0px 31px;
-    padding: 3.444444444444445rem 0rem 1.722222222222222rem;
+    padding: 3.4444444444rem 0rem 1.7222222222rem;
     text-align: center;
   }
 }
@@ -598,7 +595,7 @@ figure blockquote p {
     font-size: 27px;
     font-size: 1.6875rem;
     line-height: 46.5px;
-    line-height: 2.583333333333334rem;
+    line-height: 2.5833333333rem;
   }
 }
 
@@ -641,7 +638,6 @@ dfn {
 em,
 i {
   line-height: 0;
-  position: relative;
   vertical-align: baseline;
 }
 
@@ -658,7 +654,7 @@ small {
 @media screen and (min-width: 40em) {
   small {
     line-height: 15.5px;
-    line-height: 0.861111111111111rem;
+    line-height: 0.8611111111rem;
   }
 }
 
@@ -698,7 +694,7 @@ sub {
 }
 
 .uppercase {
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
@@ -707,9 +703,42 @@ video {
   vertical-align: baseline;
 }
 
+.bibliography {
+  background-color: #f2f2f2;
+  padding: 2rem;
+  text-align: center;
+}
+.bibliography h3 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.bibliography ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.bibliography li {
+  font-size: 1rem;
+}
+.bibliography a {
+  color: #007bff;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+.bibliography a:hover {
+  border-bottom: 2px solid #007bff;
+}
+
 /* TODOs:
  - some line heights produce margins with .5 results, seemingly breaking the gird (?),
  - add table and side comments elements,
  */
-
 /*# sourceMappingURL=gutenberg.css.map */
